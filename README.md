@@ -1,4 +1,6 @@
 # setting-depencies-daoussr
+Пока что файл, куда попадет все, что надо срочно записать
+
 Подборка информационных материалов для настройки и формирования рабочего окружения на компьютере участника проекта.
 
 Selection of information materials for setting up and creating a working environment on the project participant's computer.
@@ -17,7 +19,3 @@ To make autologin in Debian 10 using GNOME shell (gdm3) you need to uncomment an
   TimedLoginEnable = true
   TimedLogin = yourusername
   TimedLoginDelay = 0
-
-  Требуется создание рабочей группы в неограниченном составе.
-
-Кодеры, пиарщики, итд
