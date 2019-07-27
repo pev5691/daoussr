@@ -1,2 +1,66 @@
-~/TL-WN727N_V4_150909$ cat /proc/version
+Дело происходит на Debian 10, который образовался в результате серии обновления из Debian 9
+Вот вывод команды uname -a:
+pev5691@debian:~/TL-WN727N_V4_150909$ uname -a
+Linux debian 4.19.0-5-amd64 #1 SMP Debian 4.19.37-5+deb10u1 (2019-07-19) x86_64 GNU/Linux
+
+Вот вывод данных от cat /proc/version:
+pev5691@debian:~/TL-WN727N_V4_150909$ cat /proc/version
 Linux version 4.19.0-5-amd64 (debian-kernel@lists.debian.org) (gcc version 8.3.0 (Debian 8.3.0-6)) #1 SMP Debian 4.19.37-5+deb10u1 (2019-07-19)
+
+Полный комплект заголовков, еси чо.
+pev5691@debian:~/TL-WN727N-Linux$ dpkg -l|grep linux-headers
+ii  linux-headers-4.19.0-5-amd64          4.19.37-5+deb10u1                    amd64        Header files for Linux 4.19.0-5-amd64
+ii  linux-headers-4.19.0-5-common         4.19.37-5+deb10u1                    all          Common header files for Linux 4.19.0-5
+ii  linux-headers-amd64                   4.19+105                             amd64        Header files for Linux amd64 configuration (meta-package)
+
+Беру с гитхаба исходники драйвера для <a href=https://github.com/NewbieCoder99/TL-WN727N-Linux>TL-WN727N</a>, пытаюсь собрать - получаю дулю:
+pev5691@debian:~/TL-WN727N-Linux$ sudo make
+make -C /lib/modules/`uname -r`/build M=$PWD
+make[1]: вход в каталог «/usr/src/linux-headers-4.19.0-5-amd64»
+  CC [M]  /home/pev5691/TL-WN727N-Linux/usb.o
+  CC [M]  /home/pev5691/TL-WN727N-Linux/init.o
+  CC [M]  /home/pev5691/TL-WN727N-Linux/main.o
+  CC [M]  /home/pev5691/TL-WN727N-Linux/mcu.o
+  CC [M]  /home/pev5691/TL-WN727N-Linux/trace.o
+  CC [M]  /home/pev5691/TL-WN727N-Linux/dma.o
+  CC [M]  /home/pev5691/TL-WN727N-Linux/core.o
+  CC [M]  /home/pev5691/TL-WN727N-Linux/eeprom.o
+  CC [M]  /home/pev5691/TL-WN727N-Linux/phy.o
+  CC [M]  /home/pev5691/TL-WN727N-Linux/mac.o
+/home/pev5691/TL-WN727N-Linux/mac.c: In function ‘mt76_mac_process_rate’:
+/home/pev5691/TL-WN727N-Linux/mac.c:408:20: error: ‘RX_FLAG_SHORTPRE’ undeclared (first use in this function); did you mean ‘RX_ENC_FLAG_SHORTPRE’?
+    status->flag |= RX_FLAG_SHORTPRE;
+                    ^~~~~~~~~~~~~~~~
+                    RX_ENC_FLAG_SHORTPRE
+/home/pev5691/TL-WN727N-Linux/mac.c:408:20: note: each undeclared identifier is reported only once for each function it appears in
+/home/pev5691/TL-WN727N-Linux/mac.c:417:19: error: ‘RX_FLAG_HT_GF’ undeclared (first use in this function); did you mean ‘RX_ENC_FLAG_HT_GF’?
+   status->flag |= RX_FLAG_HT_GF;
+                   ^~~~~~~~~~~~~
+                   RX_ENC_FLAG_HT_GF
+/home/pev5691/TL-WN727N-Linux/mac.c:420:19: error: ‘RX_FLAG_HT’ undeclared (first use in this function); did you mean ‘RX_ENC_HT’?
+   status->flag |= RX_FLAG_HT;
+                   ^~~~~~~~~~
+                   RX_ENC_HT
+/home/pev5691/TL-WN727N-Linux/mac.c:429:19: error: ‘RX_FLAG_SHORT_GI’ undeclared (first use in this function); did you mean ‘RX_ENC_FLAG_SHORT_GI’?
+   status->flag |= RX_FLAG_SHORT_GI;
+                   ^~~~~~~~~~~~~~~~
+                   RX_ENC_FLAG_SHORT_GI
+/home/pev5691/TL-WN727N-Linux/mac.c:432:24: error: ‘RX_FLAG_STBC_SHIFT’ undeclared (first use in this function); did you mean ‘RX_ENC_FLAG_STBC_SHIFT’?
+   status->flag |= 1 << RX_FLAG_STBC_SHIFT;
+                        ^~~~~~~~~~~~~~~~~~
+                        RX_ENC_FLAG_STBC_SHIFT
+/home/pev5691/TL-WN727N-Linux/mac.c:435:19: error: ‘RX_FLAG_40MHZ’ undeclared (first use in this function)
+   status->flag |= RX_FLAG_40MHZ;
+                   ^~~~~~~~~~~~~
+make[4]: *** [/usr/src/linux-headers-4.19.0-5-common/scripts/Makefile.build:309: /home/pev5691/TL-WN727N-Linux/mac.o] Ошибка 1
+make[3]: *** [/usr/src/linux-headers-4.19.0-5-common/Makefile:1539: _module_/home/pev5691/TL-WN727N-Linux] Ошибка 2
+make[2]: *** [Makefile:146: sub-make] Ошибка 2
+make[1]: *** [Makefile:8: all] Ошибка 2
+make[1]: выход из каталога «/usr/src/linux-headers-4.19.0-5-amd64»
+make: *** [Makefile:8: default] Ошибка 2
+
+Впрочем, это не первая попытка собрать из разных источников.
+Ясно, что адаптер древний, техподдержка адаптера никакая, и вообще, это фуфло нужно выкинуть...
+Так что интерес, можно сказать, чисто академический, хотя таких адаптеров у меня несколько штук, и по вынью, любой, запускаются с полпинка.
+Так что - будем терзать дальше.
+Не уверен, что стоит понижать версию ядра, но - поглядим. Может для роутера, с фаервалом, проксями и прочей мелочью вполне сойдет.
