@@ -21,6 +21,1007 @@
   Во избежании путаницы, система сама расставляет приглашенных, которые купили какие-либо инвестиционные пакеты, под участником, обеспечивающим приток новых участников со своим идентификатором.<br>
   Участники, пришедшие, как рефералы, но не оплатившие пакет, “висят” либо в пуле ожидающих на постановку в рефсистему либо до оплаты пакета, либо удаления по окончании срока его действия.<br>
   Таким образом, рефоводу, желающему получать доход, требуется выкупать новые пакеты, а не вкладываться одноразово и полностью в заинтересовавший его инвест пакет.<br>
-  Сами пакеты, предлагаемые к покупке, имеют определенный количественный лимит и временные интервалы доступности. То есть, нельзя купить одновременно и сразу несколько пакетов одного номинала. Алгоритм распределения временных интервалов будет зависеть от нескольких факторов и соответствовать правилам увеличения стабильности хайпа. </p>
+  Сами пакеты, предлагаемые к покупке, имеют определенный количественный лимит и временные интервалы доступности. То есть, нельзя купить одновременно и сразу несколько пакетов одного номинала. Алгоритм распределения временных интервалов будет зависеть от нескольких факторов и соответствовать правилам увеличения стабильности хайпа.</p>
+<p>Попробуем спроектировать рефсистему хайпа.
+Для начала прикинем, каковы опасности её существования для устойчивости пирамиды хайпа.
+Она снижает капитализацию финансового потока, доступного к использованию в инвестициях, ради которых, собственно и создается хайп.
+Вынуждает закладывать либо ограничение продолжительность работы проекта, либо приводит к скаму.
+
+Преимущества наличия рефсистемы
+Обеспечивает заинтересованность участников в самостоятельном продвижении проекта, стимулируя приток новых участников, обеспечивая приток дополнительных объемов инвестиций.
+Даже исходя из этих трех упоминаний, можно начать искать компромисс между жадностью и страхом участников, прогнозируя срок жизни хайпа.
+
+Из того разнообразия схем распределения реферального дохода, которые известных мне, видится схема с постоянным возобновлением участия.
+Берем схему, в которой под рефоводом можно подписать только двух участников.
+Речь идет только об активных участниках, то есть которые приобрели какой-либо инвестиционный пакет, как бы он не выглядел и какие бы в нем не были оговорены условия.
+Пришел с активом - активный.
+Просто, попробовать, протестировать - присутствуешь, как зритель, даже если за тобой пришли другие, активные и получили какой-либо пакет. Если в твоей структуре нет свободного места в оплаченных тобою пакетах, то реферал назначается на свободное место участнику твоей структуры.</p>
+<p>
+  <!--td {border: 1px solid #ccc;}br {mso-data-placement:same-cell;}-->
+</p>
+<table xmlns="http://www.w3.org/1999/xhtml" cellspacing="0" cellpadding="0" dir="ltr" border="1">
+  <colgroup>
+  <col width="28"/>
+  <col width="80"/>
+  <col width="38"/>
+  <col width="30"/>
+  <col width="30"/>
+  <col width="14"/>
+  <col width="14"/>
+  <col width="14"/>
+  <col width="14"/>
+  <col width="14"/>
+  <col width="14"/>
+  <col width="14"/>
+  <col width="14"/>
+  <col width="14"/>
+  <col width="14"/>
+  <col width="14"/>
+  <col width="14"/>
+  <col width="14"/>
+  <col width="14"/>
+  <col width="14"/>
+  <col width="14"/>
+  <col width="14"/>
+  <col width="14"/>
+  <col width="14"/>
+  <col width="14"/>
+  <col width="14"/>
+  <col width="14"/>
+  <col width="14"/>
+  <col width="14"/>
+  <col width="14"/>
+  <col width="14"/>
+  <col width="14"/>
+  <col width="14"/>
+  <col width="14"/>
+  <col width="14"/>
+  <col width="14"/>
+  <col width="14"/>
+  <col width="14"/>
+  <col width="14"/>
+  <col width="14"/>
+  <col width="14"/>
+  <col width="14"/>
+  <col width="14"/>
+  <col width="14"/>
+  <col width="114"/>
+  <col width="59"/>
+  <col width="152"/>
+  </colgroup>
+  <tbody>
+    <tr>
+      <td data-sheets-value="{'1':2,'2':'нпп'}">нпп</td>
+      <td data-sheets-value="{'1':2,'2':'сумм уч гор'}">сумм уч гор</td>
+      <td data-sheets-value="{'1':2,'2':'% 1'}">% 1</td>
+      <td data-sheets-value="{'1':2,'2':'% 2'}">% 2</td>
+      <td data-sheets-value="{'1':2,'2':'% 3'}">% 3</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td data-sheets-value="{'1':2,'2':'сумм % рефоводу'}">сумм % рефоводу</td>
+      <td data-sheets-value="{'1':2,'2':'Взнос %'}">Взнос %</td>
+      <td data-sheets-value="{'1':2,'2':'Зачисление в пирамиду'}">Зачисление в пирамиду</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td data-sheets-value="{'1':3,'3':62}" data-sheets-formula="=СУММ(R[1]C[0]:R[5]C[0])">62</td>
+      <td data-sheets-value="{'1':3,'3':6}" data-sheets-formula="=СУММ(R[1]C[0]:R[3]C[0])">6</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td data-sheets-value="{'1':3,'3':1}">1</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td data-sheets-value="{'1':3,'3':1378}" data-sheets-formula="=СУММ(R[1]C[0]:R[3]C[0])">1378</td>
+    </tr>
+    <tr>
+      <td data-sheets-value="{'1':3,'3':1}">1</td>
+      <td data-sheets-value="{'1':3,'3':2}" data-sheets-formula="=СУММ(R[0]C[4]:R[0]C[42])">2</td>
+      <td data-sheets-value="{'1':3,'3':3}">3</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td data-sheets-value="{'1':3,'3':1}">1</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td data-sheets-value="{'1':3,'3':1}">1</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td data-sheets-value="{'1':3,'3':6}" data-sheets-formula="=R[0]C[-43]*R[0]C[-42]">6</td>
+      <td data-sheets-value="{'1':3,'3':100}">100</td>
+      <td data-sheets-value="{'1':3,'3':194}" data-sheets-formula="=R[0]C[-1]*R[0]C[-45]-R[0]C[-2]">194</td>
+    </tr>
+    <tr>
+      <td data-sheets-value="{'1':3,'3':2}">2</td>
+      <td data-sheets-value="{'1':3,'3':4}" data-sheets-formula="=СУММ(R[0]C[4]:R[0]C[42])">4</td>
+      <td data-sheets-value="{'1':3,'3':2}">2</td>
+      <td data-sheets-value="{'1':3,'3':3}">3</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td data-sheets-value="{'1':3,'3':1}">1</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td data-sheets-value="{'1':3,'3':1}">1</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td data-sheets-value="{'1':3,'3':1}">1</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td data-sheets-value="{'1':3,'3':1}">1</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td data-sheets-value="{'1':3,'3':8}" data-sheets-formula="=R[0]C[-43]*R[0]C[-42]">8</td>
+      <td data-sheets-value="{'1':3,'3':100}">100</td>
+      <td data-sheets-value="{'1':3,'3':392}" data-sheets-formula="=R[0]C[-1]*R[0]C[-45]-R[0]C[-2]">392</td>
+    </tr>
+    <tr>
+      <td data-sheets-value="{'1':3,'3':3}">3</td>
+      <td data-sheets-value="{'1':3,'3':8}" data-sheets-formula="=СУММ(R[0]C[4]:R[0]C[42])">8</td>
+      <td data-sheets-value="{'1':3,'3':1}">1</td>
+      <td data-sheets-value="{'1':3,'3':2}">2</td>
+      <td data-sheets-value="{'1':3,'3':3}">3</td>
+      <td></td>
+      <td></td>
+      <td data-sheets-value="{'1':3,'3':1}">1</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td data-sheets-value="{'1':3,'3':1}">1</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td data-sheets-value="{'1':3,'3':1}">1</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td data-sheets-value="{'1':3,'3':1}">1</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td data-sheets-value="{'1':3,'3':1}">1</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td data-sheets-value="{'1':3,'3':1}">1</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td data-sheets-value="{'1':3,'3':1}">1</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td data-sheets-value="{'1':3,'3':1}">1</td>
+      <td></td>
+      <td></td>
+      <td data-sheets-value="{'1':3,'3':8}" data-sheets-formula="=R[0]C[-43]*R[0]C[-42]">8</td>
+      <td data-sheets-value="{'1':3,'3':100}">100</td>
+      <td data-sheets-value="{'1':3,'3':792}" data-sheets-formula="=R[0]C[-1]*R[0]C[-45]-R[0]C[-2]">792</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td data-sheets-value="{'1':3,'3':16}" data-sheets-formula="=СУММ(R[0]C[4]:R[0]C[42])">16</td>
+      <td></td>
+      <td data-sheets-value="{'1':3,'3':1}">1</td>
+      <td data-sheets-value="{'1':3,'3':2}">2</td>
+      <td></td>
+      <td data-sheets-value="{'1':3,'3':1}">1</td>
+      <td></td>
+      <td data-sheets-value="{'1':3,'3':1}">1</td>
+      <td></td>
+      <td data-sheets-value="{'1':3,'3':1}">1</td>
+      <td></td>
+      <td data-sheets-value="{'1':3,'3':1}">1</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td data-sheets-value="{'1':3,'3':1}">1</td>
+      <td></td>
+      <td data-sheets-value="{'1':3,'3':1}">1</td>
+      <td></td>
+      <td data-sheets-value="{'1':3,'3':1}">1</td>
+      <td></td>
+      <td data-sheets-value="{'1':3,'3':1}">1</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td data-sheets-value="{'1':3,'3':1}">1</td>
+      <td></td>
+      <td data-sheets-value="{'1':3,'3':1}">1</td>
+      <td></td>
+      <td data-sheets-value="{'1':3,'3':1}">1</td>
+      <td></td>
+      <td data-sheets-value="{'1':3,'3':1}">1</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td data-sheets-value="{'1':3,'3':1}">1</td>
+      <td></td>
+      <td data-sheets-value="{'1':3,'3':1}">1</td>
+      <td></td>
+      <td data-sheets-value="{'1':3,'3':1}">1</td>
+      <td></td>
+      <td data-sheets-value="{'1':3,'3':1}">1</td>
+      <td></td>
+      <td data-sheets-value="{'1':3,'3':0}" data-sheets-formula="=R[0]C[-43]*R[0]C[-42]">0</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td data-sheets-value="{'1':3,'3':32}" data-sheets-formula="=СУММ(R[0]C[4]:R[0]C[42])">32</td>
+      <td></td>
+      <td></td>
+      <td data-sheets-value="{'1':3,'3':1}">1</td>
+      <td data-sheets-value="{'1':3,'3':1}">1</td>
+      <td data-sheets-value="{'1':3,'3':1}">1</td>
+      <td data-sheets-value="{'1':3,'3':1}">1</td>
+      <td data-sheets-value="{'1':3,'3':1}">1</td>
+      <td></td>
+      <td data-sheets-value="{'1':3,'3':1}">1</td>
+      <td data-sheets-value="{'1':3,'3':1}">1</td>
+      <td data-sheets-value="{'1':3,'3':1}">1</td>
+      <td data-sheets-value="{'1':3,'3':1}">1</td>
+      <td></td>
+      <td data-sheets-value="{'1':3,'3':1}">1</td>
+      <td data-sheets-value="{'1':3,'3':1}">1</td>
+      <td data-sheets-value="{'1':3,'3':1}">1</td>
+      <td data-sheets-value="{'1':3,'3':1}">1</td>
+      <td></td>
+      <td data-sheets-value="{'1':3,'3':1}">1</td>
+      <td data-sheets-value="{'1':3,'3':1}">1</td>
+      <td data-sheets-value="{'1':3,'3':1}">1</td>
+      <td data-sheets-value="{'1':3,'3':1}">1</td>
+      <td></td>
+      <td data-sheets-value="{'1':3,'3':1}">1</td>
+      <td data-sheets-value="{'1':3,'3':1}">1</td>
+      <td data-sheets-value="{'1':3,'3':1}">1</td>
+      <td data-sheets-value="{'1':3,'3':1}">1</td>
+      <td></td>
+      <td data-sheets-value="{'1':3,'3':1}">1</td>
+      <td data-sheets-value="{'1':3,'3':1}">1</td>
+      <td data-sheets-value="{'1':3,'3':1}">1</td>
+      <td data-sheets-value="{'1':3,'3':1}">1</td>
+      <td></td>
+      <td data-sheets-value="{'1':3,'3':1}">1</td>
+      <td data-sheets-value="{'1':3,'3':1}">1</td>
+      <td data-sheets-value="{'1':3,'3':1}">1</td>
+      <td data-sheets-value="{'1':3,'3':1}">1</td>
+      <td></td>
+      <td data-sheets-value="{'1':3,'3':1}">1</td>
+      <td data-sheets-value="{'1':3,'3':1}">1</td>
+      <td data-sheets-value="{'1':3,'3':1}">1</td>
+      <td data-sheets-value="{'1':3,'3':1}">1</td>
+      <td data-sheets-value="{'1':3,'3':0}" data-sheets-formula="=R[0]C[-43]*R[0]C[-42]">0</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td data-sheets-value="{'1':3,'3':2}">2</td>
+      <td data-sheets-value="{'1':3,'3':3}">3</td>
+      <td data-sheets-value="{'1':3,'3':3}">3</td>
+      <td data-sheets-value="{'1':3,'3':2}">2</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td data-sheets-value="{'1':3,'3':3}">3</td>
+      <td data-sheets-value="{'1':3,'3':3}">3</td>
+      <td data-sheets-value="{'1':3,'3':1}">1</td>
+      <td data-sheets-value="{'1':3,'3':1}">1</td>
+      <td data-sheets-value="{'1':3,'3':3}">3</td>
+      <td data-sheets-value="{'1':3,'3':3}">3</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td data-sheets-value="{'1':3,'3':2}">2</td>
+      <td data-sheets-value="{'1':3,'3':3}">3</td>
+      <td data-sheets-value="{'1':3,'3':3}">3</td>
+      <td data-sheets-value="{'1':3,'3':2}">2</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
 </body>
 </html>
