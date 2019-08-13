@@ -1,4 +1,4 @@
-# setting-depencies-daoussr
+H1 setting-depencies-daoussr
 Пока что файл, куда попадет все, что надо срочно записать
 
 Подборка информационных материалов для настройки и формирования рабочего окружения на компьютере участника проекта.
@@ -11,9 +11,9 @@ Selection of information materials for setting up and creating a working environ
 
 To make autologin in Debian 10 using GNOME shell (gdm3) you need to uncomment and correct lines in /etc/gdm3/daemon.conf, making the following changes:you need to uncomment and correct the lines in /etc/gdm3/daemon.conf
 
-* Enabling automatic login
-  AutomaticLoginEnable = true
-  AutomaticLogin = yourusername
+># Enabling automatic login
+>   AutomaticLoginEnable = true
+>   AutomaticLogin = yourusername
 
 * Enabling timed login
   TimedLoginEnable = true
