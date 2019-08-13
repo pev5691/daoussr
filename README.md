@@ -13,6 +13,7 @@ To make autologin in Debian 10 using GNOME shell (gdm3) you need to uncomment an
 
 ># Enabling automatic login
 >   AutomaticLoginEnable = true
+***
 >   AutomaticLogin = yourusername
 
 * Enabling timed login
