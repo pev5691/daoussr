@@ -21,3 +21,5 @@ To make autologin in Debian 10 using GNOME shell (gdm3) you need to uncomment an
    TimedLogin = yourusername
    TimedLoginDelay = 0
 ```
+
+:smile: любопытное форматирование в этих файлах!
