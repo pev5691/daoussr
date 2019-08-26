@@ -3,7 +3,7 @@ body {
 	background: #666666;
 	margin: 0; /* it's good practice to zero the margin and padding of the body element to account for differing browser defaults */
 	padding: 0;
-	text-align: center; /* this centers the container in IE 5* browsers. The text is then set to the left aligned default in the #container selector */
+/* 	text-align: center; this centers the container in IE 5* browsers. The text is then set to the left aligned default in the #container selector */
 	color: #000000;
 }
 
@@ -28,6 +28,7 @@ body {
 	padding: 10px 0; /* using padding instead of margin will allow you to keep the element away from the edges of the div */
 }
 .oneColElsCtrHdr #mainContent {
+	width: 72em;  /* this width will create a container that will fit in an 800px browser window if text is left at browser default font sizes */
 	padding: 0 20px; /* remember that padding is the space inside the div box and margin is the space outside the div box */
 	background: #FFFFFF;
 }
