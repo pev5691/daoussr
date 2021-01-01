@@ -23,8 +23,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0a40988c-676f-4363-a7f1-8a352a608d4c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/htmldata/slaider.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmldata/slaider.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmldata/slaider.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/slaider.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmldata/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,9 +34,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="JavaScript File" />
         <option value="HTML File" />
         <option value="CSS File" />
-        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -50,15 +50,20 @@
     <auto-save>true</auto-save>
   </component>
   <component name="ProjectId" id="1hgGMjGMrpuVcUTksPL2bDVb4ne" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/test1" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -68,6 +73,15 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="settings.meteor" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/test1" />
+      <recent name="$PROJECT_DIR$/test" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/test" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -85,6 +99,12 @@
       <workItem from="1600751725880" duration="13000" />
       <workItem from="1600885091908" duration="35000" />
       <workItem from="1607343729436" duration="319000" />
+      <workItem from="1608727899647" duration="267000" />
+      <workItem from="1608728171187" duration="714000" />
+      <workItem from="1608837935593" duration="17190000" />
+      <workItem from="1609007827724" duration="1224000" />
+      <workItem from="1609043601061" duration="773000" />
+      <workItem from="1609493381773" duration="812000" />
     </task>
     <servers />
   </component>
@@ -103,22 +123,7 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
-  <component name="WindowStateProjectService">
-    <state x="420" y="169" width="469" height="432" key="#Web_Browsers" timestamp="1600504491475">
-      <screen x="0" y="0" width="1318" height="768" />
-    </state>
-    <state x="420" y="169" width="469" height="432" key="#Web_Browsers/0.0.1318.768@0.0.1318.768" timestamp="1600504491475" />
-    <state x="117" y="43" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1600445115277">
-      <screen x="0" y="0" width="1318" height="768" />
-    </state>
-    <state x="117" y="43" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1318.768@0.0.1318.768" timestamp="1600445115277" />
-    <state x="442" y="143" width="426" height="484" key="FileChooserDialogImpl" timestamp="1600521317077">
-      <screen x="0" y="0" width="1318" height="768" />
-    </state>
-    <state x="442" y="143" width="426" height="484" key="FileChooserDialogImpl/0.0.1318.768@0.0.1318.768" timestamp="1600521317077" />
-    <state x="0" y="0" width="1318" height="768" key="SettingsEditor" timestamp="1600521318825">
-      <screen x="0" y="0" width="1318" height="768" />
-    </state>
-    <state x="0" y="0" width="1318" height="768" key="SettingsEditor/0.0.1318.768@0.0.1318.768" timestamp="1600521318825" />
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>
